@@ -21,7 +21,9 @@ function sommaPari (numero1, numero2) {
 }
 
 // scelta utente ,
-var sceltaUtente = prompt('scegli pari o dispari');
+do {
+  var sceltaUtente = prompt('scegli pari o dispari');
+} while (sceltaUtente != 'pari' && sceltaUtente != 'dispari');
 console.log('sceltaUtente', sceltaUtente);
 do {
   var numeroUtente = parseInt(prompt('scegli un numero tra 1 e 5 compresi'));
