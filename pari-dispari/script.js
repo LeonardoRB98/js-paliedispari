@@ -20,10 +20,12 @@ function sommaPari (numero1, numero2) {
   }
 }
 
-// scelta utente
+// scelta utente ,
 var sceltaUtente = prompt('scegli pari o dispari');
 console.log('sceltaUtente', sceltaUtente);
-var numeroUtente = parseInt(prompt('scegli un numero tra 1 e 5 compresi'));
+do {
+  var numeroUtente = parseInt(prompt('scegli un numero tra 1 e 5 compresi'));
+} while (numeroUtente < 1 || numeroUtente > 5 || isNaN(numeroUtente));
 console.log('numeroUtente', numeroUtente);
 
 // numero casuale computer
