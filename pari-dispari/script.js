@@ -31,5 +31,11 @@ var numeroComputer = RandomNumber(5, 1);
 console.log('numeroComputer', numeroComputer);
 
 // somma numeroUtente + numeroComputer
-var totale = numeroUtente + numeroComputer;
-console.log('numeroUtente + numeroComputer', totale);
+var risultato = sommaPari(numeroComputer, numeroUtente);
+console.log('risultato', risultato);
+
+if ((risultato == true && sceltaUtente == 'pari') || (risultato == false && sceltaUtente == 'dispari')) {
+  alert('utente vince!')
+} else {
+ alert('computer vince!')
+}
