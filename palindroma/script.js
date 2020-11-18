@@ -11,9 +11,6 @@ if (palindroma(parola) == true) {
 }
 
 
-
-
-
 function palindroma(parola) {
   // 2 scompongo la parola in lettere e pusho le lettere nell'array parolaLettere
   var parolaScomposta = parola.split('');
